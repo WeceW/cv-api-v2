@@ -10,12 +10,12 @@ import { UsersModule } from './modules/users/users.module';
   imports: [
     ConfigModule.forRoot({ envFilePath: '.env' }),
     TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: 'localhost',
-      port: Number(process.env.DATABASE_PORT) ?? 3306,
-      username: process.env.DATABASE_USERNAME,
-      password: process.env.DATABASE_PASSWORD,
-      database: process.env.DATABASE_NAME,
+      type: 'postgres',
+      host: process.env.POSTGRES_HOST,
+      port: Number(process.env.POSTGRES_PORT) ?? 5432,
+      username: process.env.POSTGRES_USER,
+      password: process.env.POSTGRES_PASSWORD,
+      database: process.env.POSTGRES_NAME,
       entities: [__dirname + '/**/**/**.entity{.ts,.js}'],
       migrations: [__dirname + '/../migrations/*{.ts,.js}'],
       synchronize: true,

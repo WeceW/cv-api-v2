@@ -17,7 +17,7 @@ export class Page {
   title: string;
 
   @ApiProperty()
-  @Column('longtext')
+  @Column('text')
   content: string;
 }
 
