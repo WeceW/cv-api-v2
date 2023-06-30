@@ -1,6 +1,7 @@
 import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
 import { PagesService } from './pages.service';
 import { CreatePageDto } from './page.entity';
+import { Public } from 'src/decorators/Public';
 
 @Controller('pages')
 export class PagesController {
@@ -11,6 +12,7 @@ export class PagesController {
     return this.pagesService.findAll();
   }
 
+  @Public()
   @Get(':slug')
   findOne(@Param('slug') slug: string) {
     return this.pagesService.findOneBy(slug);
