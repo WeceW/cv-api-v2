@@ -8,7 +8,7 @@ export class Page {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @ApiProperty({ example: 1, description: 'The age of the Cat' })
+  @ApiProperty()
   @Column()
   slug: string;
 

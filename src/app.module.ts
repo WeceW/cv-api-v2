@@ -5,6 +5,7 @@ import { ConfigModule } from '@nestjs/config';
 import { PagesModule } from './modules/pages/pages.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { UsersModule } from './modules/users/users.module';
+import { EventsModule } from './modules/events/events.module';
 import typeormConfig from 'typeorm.config';
 
 @Module({
@@ -14,6 +15,7 @@ import typeormConfig from 'typeorm.config';
     PagesModule,
     AuthModule,
     UsersModule,
+    EventsModule,
   ],
   controllers: [AppController],
 })
