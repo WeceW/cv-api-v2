@@ -20,7 +20,8 @@ See [Swagger Docs](https://toni-weckroth-api-v2.onrender.com/api).
 
 ## Good to know
 
-- Most of the routes are protected and require authentication
+- Most of the routes are protected and require authentication.
+- Besides serving data, API composes some simple analytics based on events data is receives from clients.
 
 ## Deploy (to render.com)
 Push to branch `master`
