@@ -2,7 +2,7 @@
 
 REST API built with NestJS for serving data for my [CV App](https://github.com/WeceW/cv).
 
-See [Swagger Docs](https://toni-weckroth-api-v2.onrender.com/api).
+See [Swagger Docs](https://toni-weckroth-api-v2.onrender.com/api). (Please note that it might take up to 3 minutes for API to wake up)
 
 ## Getting started
 
@@ -24,4 +24,5 @@ See [Swagger Docs](https://toni-weckroth-api-v2.onrender.com/api).
 - Besides serving data, API composes some simple analytics based on events data is receives from clients.
 
 ## Deploy (to render.com)
+
 Push to branch `master`
