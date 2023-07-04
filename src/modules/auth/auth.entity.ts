@@ -30,3 +30,8 @@ export class RegisterDto {
 }
 
 export class SignInDto extends RegisterDto {}
+
+export class SignInResponse {
+  @ApiProperty()
+  access_token: string;
+}

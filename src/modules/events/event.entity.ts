@@ -4,7 +4,6 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Event {
-  @ApiProperty()
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -24,27 +23,27 @@ export class Event {
   @Column()
   origin: string;
 
-  @ApiProperty()
+  @ApiProperty({ required: false })
   @Column({ nullable: true })
   path?: string;
 
-  @ApiProperty()
+  @ApiProperty({ required: false })
   @Column({ nullable: true })
   linkTarget?: string;
 
-  @ApiProperty()
+  @ApiProperty({ required: false })
   @Column({ type: 'integer', nullable: true })
   screenWidth?: string;
 
-  @ApiProperty()
+  @ApiProperty({ required: false })
   @Column({ type: 'integer', nullable: true })
   screenHeight?: string;
 
-  @ApiProperty()
+  @ApiProperty({ required: false })
   @Column({ nullable: true })
   colorTheme?: string;
 
-  @ApiProperty()
+  @ApiProperty({ required: false })
   @Column({ nullable: true })
   employer?: string;
 }

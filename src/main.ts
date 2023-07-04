@@ -17,8 +17,10 @@ async function bootstrap() {
     .setTitle('CV API')
     .setDescription('CV API description')
     .setVersion('1.0')
+    .addTag('default')
     .addTag('auth')
     .addTag('pages')
+    .addTag('events')
     .addBearerAuth()
     .build();
 

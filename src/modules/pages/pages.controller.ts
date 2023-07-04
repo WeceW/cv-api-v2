@@ -2,7 +2,7 @@ import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
 import { PagesService } from './pages.service';
 import { CreatePageDto, Page } from './page.entity';
 import { Public } from '../../decorators/Public';
-import { ApiBearerAuth, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('pages')
 @Controller('pages')
@@ -24,6 +24,7 @@ export class PagesController {
   }
 
   @ApiBearerAuth()
+  @ApiParam({ type: Page, name: 'page' })
   @Post()
   create(@Body() page: CreatePageDto) {
     return this.pagesService.create(page);
