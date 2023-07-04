@@ -1,6 +1,8 @@
 # CV API
 
-REST API for serving data for my CV App
+REST API built with NestJS for serving data for my [CV App](https://github.com/WeceW/cv).
+
+See [Swagger Docs](https://toni-weckroth-api-v2.onrender.com/api).
 
 ## Getting started
 
@@ -14,7 +16,11 @@ REST API for serving data for my CV App
 ## Built with
 
 - [NestJS](https://docs.nestjs.com/)
+- TypeORM
 
 ## Good to know
 
-- Most of the routes are protected and requires authentication
+- Most of the routes are protected and require authentication
+
+## Deploy (to render.com)
+Push to branch `master`
