@@ -9,7 +9,7 @@ See [Swagger Docs](https://toni-weckroth-api-v2.onrender.com/api). (Please note 
 - Clone this repository
 - Run `yarn` to install dependencies
 - Set `.env` variables (see `.env.example`)
-  Start DB `yarn db:up` (docker-compose)
+- Start DB `yarn db:up` (docker-compose)
 - Run `yarn start:dev` to start app
 - Start developing
 
